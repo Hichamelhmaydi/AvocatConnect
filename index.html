@@ -3,10 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AvocatAgenda</title>
+    <title>AvocatAganda</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  
+    <!-- component -->
+<nav class="bg-white  shadow shadow-gray-300 h-20  w-100 px-8 md:px-auto">
+	<div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
+		<!-- Logo -->
+		<div class="text-indigo-500 md:order-1">
+			<!-- Heroicon - Chip Outline -->
+                <img src="img/AvocatAgenda.png" alt="logo" width="80px" style="margin-right:835px;">
+		</div>
+		<div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+			<ul class="flex font-semibold justify-between">
+                <!-- Active Link = text-indigo-500
+                Inactive Link = hover:text-indigo-500 -->
+				<li class="md:px-4 md:py-2 text-indigo-500"><a href="#">Accueil</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">équipe</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Cabinet</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Propos</a></li>
+				<li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="order-2 md:order-3">
+			<button class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
+                <!-- Heroicons - Login Solid -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Login</span>
+            </button>
+		</div>
+	</div>
+</nav>
+
+
+
+<main>
+    <div class="flex items-center justify-between bg-white p-10 mt-40	">
+        <!-- Left Section: Text -->
+        <div class="w-1/2">
+          <h2 class="text-3xl font-bold text-gray-400 mb-5">
+            <span class="border-b-2 border-gray-300">Notre cabinet</span>
+          </h2>
+          <div class="bg-gray-200 p-6 mb-4">
+            <p class="text-gray-700 mb-2">Qui sommes-nous ?</p>
+            <p class="text-gray-700 mb-2">Nos engagements</p>
+            <p class="text-gray-700 mb-4">Notre méthode</p>
+            <button class="bg-gray-300 text-white px-6 py-2 text-sm hover:bg-gray-400">
+              EN SAVOIR PLUS
+            </button>
+          </div>
+        </div>
+      
+        <!-- Right Section: Curved Image --> 
+        <div class="w-1/2 relative">
+          <img
+            src="img/cabinet.jpg"
+            alt="Curved Structure"
+            class="object-cover w-full h-full rounded-lg"
+          />
+        </div>
+      </div>
+
+
+      <div class="bg-white py-10 mt-40">
+        <h2 class="text-3xl font-bold text-gray-400 mb-6 text-center">
+          <span class="border-b-2 border-gray-300">Notre Savoir-Faire</span>
+        </h2>
+      
+        <!-- Grid Container -->
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 px-10 ">
+          <!-- Box 1 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/arbitage.png');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit d'arbitage</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 2 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/commercial.jpg');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit de commercial</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 3 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/Rural.jpg');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit de Rural</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 4 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/social.jpg');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit de social</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 5 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/societes.jpg');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit des sociétés</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box 6 -->
+          <div class="relative group">
+            <div class="bg-cover bg-center h-32 sm:h-48" style="background-image: url('img/pénale.jpg');">
+              <div class="bg-gray-900 bg-opacity-50 w-full h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-sm sm:text-lg">Droit de pénale</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Button -->
+        <div class="flex justify-center mt-8">
+          <button class="bg-gray-300 text-white px-6 py-2 text-sm hover:bg-gray-400">
+            EN SAVOIR PLUS
+          </button>
+        </div>
+      </div>
+      
+
+
+
+
+
+      <div class="bg-gray-100 py-10 mt-40">
+        <!-- Section Title -->
+        <h2 class="text-4xl font-bold text-gray-700 mb-10 text-center">
+          <span class="border-b-4 border-gray-300 pb-1">Les associés</span>
+        </h2>
+      
+        <!-- Grid Container -->
+        <div class="flex flex-wrap justify-center gap-6 px-6">
+          <!-- Première Row -->
+          <!-- Associate 1 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-1.jpg" alt="Laurent Delvolvé" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Laurent Delvolvé</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 2 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-2.jpg" alt="Sébastien Poniatowski" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Sébastien Poniatowski</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 3 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-3.jpg" alt="Alexandre Suay" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Alexandre Suay</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 4 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-4.jpg" alt="Charles Casal" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Charles Casal</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 5 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-5.jpg" alt="Lorenzo Serafini" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Lorenzo Serafini</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Deuxième Row -->
+          <!-- Associate 6 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-6.jpg" alt="Jean Dupont" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Jean Dupont</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 7 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-7.jpg" alt="Marie Lefevre" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Marie Lefevre</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 8 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-8.jpg" alt="Paul Martin" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Paul Martin</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Troisième Row -->
+          <!-- Associate 9 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-9.jpg" alt="Emma Bernard" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Emma Bernard</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 10 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-10.jpg" alt="Louis Dupuis" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Louis Dupuis</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+      
+          <!-- Associate 11 -->
+          <div class="w-48 sm:w-56 lg:w-64 bg-white shadow-md">
+            <img src="path-to-image-11.jpg" alt="Claire Durant" class="w-full h-60 object-cover">
+            <div class="p-4 text-center">
+              <p class="font-bold text-gray-700">Claire Durant</p>
+            </div>
+            <div class="bg-gray-300 py-2 text-center">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+</main>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
