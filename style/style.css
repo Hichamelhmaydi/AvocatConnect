@@ -1,7 +1,11 @@
 body{
     background-image: url(../img/bg.jpg);
 }
-#login{
-    background-image: url(../img/bg_login.jpeg);
-    background-size:cover;
+#login_client{
+ background-image: url(../img/bg_login.jpeg);
+ background-size: cover;
 }
+#login_avocat{
+    background-image: url(../img/bg_login.jpeg);
+    background-size: cover;
+   }
