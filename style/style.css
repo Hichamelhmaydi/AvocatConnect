@@ -3,15 +3,15 @@
     background-repeat: no-repeat;
     height: 240em;
 }
-#login_client{
- background-image: url(../img/bg_login.jpeg);
- background-size: cover;
-}
-#login_avocat{
-    background-image: url(../img/bg_login.jpeg);
-    background-size: cover;
-   }
 #res{
     background-image: url(../img/bg_login.jpeg);
     background-size: cover;
+}
+#login_client{
+    background-image: url(../img/bg_login.jpeg);
+    
+}
+#login_avocat{
+    background-image: url(../img/bg_login.jpeg);
+    display: none;
 }
