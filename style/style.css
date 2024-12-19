@@ -10,10 +10,12 @@
 #login_client{
     background-image: url(../img/bg_login.jpeg);
     display:none;
+    padding-left: 32em;
 }
 #login_avocat{
     background-image: url(../img/bg_login.jpeg);
     display: none;
+    padding-left: 32em;
 }
 #choix{
     background-color: rgb(0, 255, 255);
