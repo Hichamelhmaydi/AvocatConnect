@@ -1,5 +1,7 @@
-body{
+#home{
     background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    height: 240em;
 }
 #login_client{
  background-image: url(../img/bg_login.jpeg);
@@ -9,3 +11,7 @@ body{
     background-image: url(../img/bg_login.jpeg);
     background-size: cover;
    }
+#res{
+    background-image: url(../img/bg_login.jpeg);
+    background-size: cover;
+}
