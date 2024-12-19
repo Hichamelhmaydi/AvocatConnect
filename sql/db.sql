@@ -28,3 +28,7 @@ AvocatID INT,
 Date_dis DATE,
 FOREIGN KEY (AvocatID) REFERENCES avocats(AvocatID)
 );
+
+USE avocat;
+ALTER TABLE avocats
+ADD COLUMN image MEDIUMBLOB;
