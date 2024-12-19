@@ -10,5 +10,5 @@ $conn = mysqli_connect(
         $db_password,
         $db_name
 );
-mysqli_close($conn);
+
 ?>

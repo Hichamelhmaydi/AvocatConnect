@@ -36,3 +36,5 @@ ADD COLUMN image MEDIUMBLOB;
 USE avocat;
 ALTER TABLE utilisateur
 DROP COLUMN role_;
+USE avocat;
+ALTER TABLE utilisateur MODIFY password_ VARCHAR(255);
