@@ -32,3 +32,7 @@ FOREIGN KEY (AvocatID) REFERENCES avocats(AvocatID)
 USE avocat;
 ALTER TABLE avocats
 ADD COLUMN image MEDIUMBLOB;
+
+USE avocat;
+ALTER TABLE utilisateur
+DROP COLUMN role_;
