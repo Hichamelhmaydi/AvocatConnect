@@ -38,3 +38,14 @@ ALTER TABLE utilisateur
 DROP COLUMN role_;
 USE avocat;
 ALTER TABLE utilisateur MODIFY password_ VARCHAR(255);
+ALTER TABLE avocats
+ADD COLUMN full_name VARCHAR(20),
+ADD COLUMN email VARCHAR(50);
+
+ALTER TABLE avocats
+ADD COLUMN password_av VARCHAR(200);
+
+ALTER TABLE avocats CHANGE COLUMN image image_av MEDIUMBLOB;
+
+ALTER TABLE avocats MODIFY COLUMN Specialites VARCHAR(200);
+

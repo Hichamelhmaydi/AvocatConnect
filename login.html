@@ -20,7 +20,7 @@
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Create an account
                 </h1>
-                <form class="space-y-4 md:space-y-6" action="./php/add_to_db.php" method="post">
+                <form class="space-y-4 md:space-y-6" action="./php/add_cl.php" method="post">
                     <div>
                         <label for="nam" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your full-name</label>
                         <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="full name" >
@@ -49,38 +49,34 @@
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                     Create an account
                 </h1>
-                <form class="space-y-4 md:space-y-6 mt-20" action="./php/add_to_db.php" method="post">
+                <form class="space-y-4 md:space-y-6 mt-20" action="./php/add_cl.php" method="post">
                         <div>
-                            <label for="nam" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your full-name</label>
-                            <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="full name" >
+                            <label for="name_av" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your full-name</label>
+                            <input type="text" name="name_av"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="full name" >
                         </div>
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
+                            <label for="email_av" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                            <input type="email" name="email_av"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="">
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
-                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
-                        </div>
-                        <div>
-                            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
-                            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                            <option selected>Choose</option>
-                            <option value="avocat">avocat</option>
-                            <option value="client">client</option>
-                            </select>       
+                            <label for="password_av" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                            <input type="password" name="password_av"  placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
                         </div>
                         <div>
                             <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select Specialites</label>
-                            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <select id="countries" name="Specialites" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose</option>
-                            <option value="avocat">Droit arbitage</option>
-                            <option value="avocat">Droit de commercial</option>
-                            <option value="avocat">Droit de Rural</option>
-                            <option value="avocat">Droit de social</option>
-                            <option value="avocat">Droit des sociétés</option>
-                            <option value="avocat">Droit de pénale</option>
+                            <option value="Droit arbitage">Droit arbitage</option>
+                            <option value="Droit de commercial">Droit de commercial</option>
+                            <option value="Droit de Rural">Droit de Rural</option>
+                            <option value="Droit de social">Droit de social</option>
+                            <option value="Droit des sociétés">Droit des sociétés</option>
+                            <option value="Droit de pénale">Droit de pénale</option>
                             </select>       
+                        </div>
+                        <div>
+                            <label for="image" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Votre profile</label>
+                            <input type="file" name="image" id="experience"   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" >
                         </div>
                         <div>
                             <label for="experience" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">experience</label>
@@ -93,7 +89,7 @@
                             </label>
                             <div class="flex">
                              <div class="relative w-full">
-                               <textarea class="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-white bg-transparent border border-white rounded-2xl placeholder-white focus:outline-none resize-none" placeholder="Votre Biographie..."></textarea>
+                               <textarea name="Biographie" class="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-white bg-transparent border border-white rounded-2xl placeholder-white focus:outline-none resize-none" placeholder="Votre Biographie..."></textarea>
                              </div>
                             </div>
                             </div>
