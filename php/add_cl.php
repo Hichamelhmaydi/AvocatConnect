@@ -15,7 +15,7 @@ if (isset($_POST["name"], $_POST["email"], $_POST["password"])) {
     $name = mysqli_real_escape_string($conn, $_POST["name"]);
     $email = mysqli_real_escape_string($conn, $_POST["email"]);
     $password = $_POST["password"];
-    $hashed_password_user = password_hash($password, PASSWORD_BCRYPT);
+    $hashed_password_user = md5($password);
 
     function add_cl($conn, $name, $email, $hashed_password_user) {
         $stmt = $conn->prepare("INSERT INTO utilisateur (nom, email, password_) VALUES (?, ?, ?)");
@@ -33,11 +33,28 @@ if (isset($_POST["name"], $_POST["email"], $_POST["password"])) {
 }
 
 
+if(isset($_POST["date_res"])){
+
+    $date_res=$_POST["date_res"];
+    function add_res($conn,$date_res){
+        $stmt=$conn->prepare("INSERT INTO reservations (Date_res) VALUES (?)");
+        $stmt->bind_param("s",$date_res);
+        if ($stmt->execute()) {
+            echo "<p class='succes'>l'inscription avec succès</p>";
+        } else {
+            echo "<p class='error'>L'inscription a échoué</p>";
+            die();
+        }
+        $stmt->close();
+    }
+    add_res($conn,$date_res);
+}
+
 if (isset($_POST["name_av"], $_POST["email_av"], $_POST["password_av"], $_POST["Specialites"], $_POST["experience"], $_POST["image"], $_POST["Biographie"])) {
     $name_av = mysqli_real_escape_string($conn, $_POST["name_av"]);
     $email_av = mysqli_real_escape_string($conn, $_POST["email_av"]);
     $password_av = $_POST["password_av"];
-    $hashed_password_avocat = password_hash($password_av, PASSWORD_BCRYPT);
+    $hashed_password_avocat = md5( $password_av);
     $Specialites = $_POST["Specialites"];
     $experience = $_POST["experience"];
     $image_av = $_POST["image"];
