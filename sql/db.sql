@@ -5,6 +5,10 @@ email VARCHAR(20),
 password_ VARCHAR(20),
 role_ ENUM('avocat','client')
 );
+
+
+
+
 CREATE TABLE avocats(
 AvocatID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
 UserID INT ,
@@ -48,4 +52,8 @@ ADD COLUMN password_av VARCHAR(200);
 ALTER TABLE avocats CHANGE COLUMN image image_av MEDIUMBLOB;
 
 ALTER TABLE avocats MODIFY COLUMN Specialites VARCHAR(200);
+
+USE  avocat;
+ALTER TABLE utilisateur ADD UNIQUE (email);
+ALTER TABLE avocats ADD UNIQUE (email);
 
