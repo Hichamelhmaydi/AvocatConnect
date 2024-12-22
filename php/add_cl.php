@@ -10,6 +10,7 @@
 <?php
 include("connec.php");
 
+$id_client = mysqli_insert_id($conn); 
 
 if (isset($_POST["name"], $_POST["email"], $_POST["password"])) {
     $name = mysqli_real_escape_string($conn, $_POST["name"]);
@@ -22,6 +23,7 @@ if (isset($_POST["name"], $_POST["email"], $_POST["password"])) {
         $stmt->bind_param("sss", $name, $email, $hashed_password_user);
 
         if ($stmt->execute()) {
+         
             echo "<p class='succes'>l'inscription avec succès</p>";
         } else {
             echo "<p class='error'>L'inscription a échoué</p>";
@@ -33,22 +35,32 @@ if (isset($_POST["name"], $_POST["email"], $_POST["password"])) {
 }
 
 
-if(isset($_POST["date_res"])){
+if (isset($_POST["date_res"])) {
+    $date_res = $_POST["date_res"];
 
-    $date_res=$_POST["date_res"];
-    function add_res($conn,$date_res){
-        $stmt=$conn->prepare("INSERT INTO reservations (Date_res) VALUES (?)");
-        $stmt->bind_param("s",$date_res);
+    
+    function add_res($conn, $date_res) {
+     
+        $stmt = $conn->prepare("INSERT INTO reservations (clientID, Date_res) VALUES (?, ?)");
+        
+        
+        $stmt->bind_param("is", $id_client, $date_res);
+
         if ($stmt->execute()) {
-            echo "<p class='succes'>l'inscription avec succès</p>";
+            echo "<p class='succes'>L'inscription a été effectuée avec succès</p>";
         } else {
             echo "<p class='error'>L'inscription a échoué</p>";
             die();
         }
+
+       
         $stmt->close();
     }
-    add_res($conn,$date_res);
+
+    
+    add_res($conn,  $date_res);
 }
+
 
 if (isset($_POST["name_av"], $_POST["email_av"], $_POST["password_av"], $_POST["Specialites"], $_POST["experience"], $_POST["image"], $_POST["Biographie"])) {
     $name_av = mysqli_real_escape_string($conn, $_POST["name_av"]);
