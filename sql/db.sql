@@ -57,3 +57,10 @@ USE  avocat;
 ALTER TABLE utilisateur ADD UNIQUE (email);
 ALTER TABLE avocats ADD UNIQUE (email);
 
+ALTER TABLE Reservations
+DROP FOREIGN KEY Reservations_ibfk_2;
+
+ALTER TABLE Reservations
+DROP COLUMN AvocatID;
+
+
