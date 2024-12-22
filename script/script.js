@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    Client=document.getElementById("Client");
-    Avocat=document.getElementById("Avocat");  
-    choix=document.getElementById("choix");  
-    login_client=document.getElementById("login_client"); 
-    login_avocat=document.getElementById("login_avocat"); 
-
-
+    let Client=document.getElementById("Client");
+    let Avocat=document.getElementById("Avocat");  
+    let choix=document.getElementById("choix");  
+    let login_client=document.getElementById("login_client"); 
+    let login_avocat=document.getElementById("login_avocat");
+     
     Client.addEventListener("click", showClient);
     function showClient() {
         choix.style.display ='none';

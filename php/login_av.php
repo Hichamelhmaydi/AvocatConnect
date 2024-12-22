@@ -10,7 +10,7 @@ if (isset($_POST["sub"])) {
     $password_lo_md5 = md5($password_lo);
 
 
-    $stmt = $conn->prepare("SELECT * FROM utilisateur WHERE email = ?");
+    $stmt = $conn->prepare("SELECT * FROM avocats WHERE email = ?");
     $stmt->bind_param("s", $email_lo);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -19,9 +19,9 @@ if (isset($_POST["sub"])) {
     if ($result->num_rows > 0) {
         $user = $result->fetch_assoc();
 
-         if ($user['password_'] === $password_lo_md5 ) {
+         if ($user['password_av'] === $password_lo_md5 ) {
             $_SESSION['user_email'] = $user['email'];
-            header("Location: ../clientPage.php");
+            header("Location: ../avocatPage.php");
             exit();   
         }else {
             echo "mots de passe incorrect";   
