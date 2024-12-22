@@ -74,9 +74,6 @@ if (isset($_POST["name_av"], $_POST["email_av"], $_POST["password_av"], $_POST["
     }
     add_av($conn, $experience, $Biographie, $Specialites, $image_av, $name_av, $email_av, $hashed_password_avocat);
 }
-
-
-$conn->close();
 ?>
 
 </body>

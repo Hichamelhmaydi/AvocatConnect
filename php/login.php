@@ -1,7 +1,6 @@
 <?php
 include("connec.php");
 session_start();
-
 if (isset($_POST["sub"])) {
     $email_lo = $_POST["email_lo"];
     $password_lo = $_POST["password_lo"];
@@ -22,7 +21,7 @@ if (isset($_POST["sub"])) {
 
          if ($user['password_'] === $password_lo_md5) {
             $_SESSION['user_email'] = $user['email'];
-            header("Location: ../index.php");
+            header("Location: ../clientPage.php");
             exit();   
         } else {
             echo "mots de passe incorrect";   
@@ -34,5 +33,5 @@ if (isset($_POST["sub"])) {
     $stmt->close();
 }
 
-$conn->close();
+
 ?>

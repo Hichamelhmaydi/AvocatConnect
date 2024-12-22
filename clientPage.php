@@ -165,7 +165,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Laurent Delvolvé</p>
             </div>
-
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+              <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+            </a>
+            </div>
           </div>
       
         
@@ -174,7 +178,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Sébastien Poniatowski</p>
             </div>
-          
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
         
@@ -183,7 +191,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Alexandre Suay</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
          
@@ -192,7 +204,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Charles Casal</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
        
@@ -201,7 +217,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Lorenzo Serafini</p>
             </div>
-            
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
        
@@ -211,7 +231,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Jean Dupont</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
            
@@ -220,7 +244,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Marie Lefevre</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
            
@@ -229,7 +257,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Paul Martin</p>
             </div>
-        
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
         
@@ -239,7 +271,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Emma Bernard</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
            
@@ -248,7 +284,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Louis Dupuis</p>
             </div>
-           
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
       
       
@@ -257,7 +297,11 @@
             <div class="p-4 text-center">
               <p class="font-bold text-gray-700">Claire Durant</p>
             </div>
-      
+            <div class="bg-amber-400 py-2 text-center">
+              <a href="reserve.html" target="_blank">
+                <button class="text-white uppercase text-sm">RÉSERVÉ</button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
